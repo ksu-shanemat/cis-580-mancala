@@ -1,0 +1,93 @@
+#game_board {
+    width: 100%;
+    height: 30em;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: row;
+}
+
+#game_pits {
+    width: 70%;
+    height: 100%;
+
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 0% 1% 0% 1%;
+
+    display: flex;
+    flex-flow: column;
+}
+
+.pit_group {
+    width: 100%;
+    height: 50%;
+
+    position: relative;
+
+    box-sizing: border-box;
+    padding: 1%;
+
+    display: flex;
+}
+
+.score_pit {
+    width: 15%;
+    height: 100%;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column;
+
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+.pit {
+    width: 17%;
+    height: 100%;
+
+    position: relative;
+
+    box-sizing: content-box;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+
+    display: flex;
+    flex-flow: column;
+
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+.pebble_space {
+    flex: 1 1 auto;
+
+    box-sizing: border-box;
+    padding: 10%;
+}
+
+.pebble_count_container {
+    flex: 0 1 20%;
+
+    box-sizing: border-box;
+    padding: 5% 15% 5% 15%;
+
+    display: flex;
+    align-items: center;
+}
+
+.pebble {
+    width: 24px;
+    height: 24px;
+
+    border: 2px solid black;
+    border-radius: 50%;
+}

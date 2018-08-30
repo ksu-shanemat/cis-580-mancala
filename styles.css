@@ -1,0 +1,41 @@
+.centered_text {
+    width: 100%;
+    text-align: center;
+}
+
+.pebble_count_text {
+    font-size: x-large;
+}
+
+.bold_text {
+    font-weight: bold;
+}
+
+
+
+.left_player {
+    border-color: red;
+}
+
+.red {
+    background-color: red;
+}
+
+.right_player {
+    border-color: blue;
+}
+
+.blue {
+    background-color: blue;
+}
+
+
+
+.mini_pebble {
+    height: 0.75em;
+    width: 0.75em;
+
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 50%;
+}

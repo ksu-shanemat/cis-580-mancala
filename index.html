@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Mancala ( shanemat@ksu )</title>
+        <link rel="stylesheet" type="text/css" href="game_board.css">
+        <link rel="stylesheet" type="text/css" href="game_stats.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="game_stats">
+            <div id="game_name_container">
+                <div id="game_name" class="centered_text">Mancala</div>
+            </div>
+            <div id="game_score_container">
+                <div id="turn_indicator" class="bold_text">
+                    Turn: <span class="mini_pebble red"></span> player
+                </div>
+                <div id="score indicator" class="bold_text">
+                    Score: <span class="mini_pebble red"></span> 0 x 0 <span class="mini_pebble blue"></span>
+                </div>
+                <div id="pebble_distribution" class="bold_text">
+                    Pebbles: <span class="mini_pebble red"></span> 0 x 0 <span class="mini_pebble blue"></span>
+                </div>
+            </div>
+        </div>
+        <div id="game_board">
+            <div id="left_score_pit" class="score_pit left_player">
+                <div id="left_score_pit_pebble_space" class="pebble_space"></div>
+                <div class="pebble_count_container">
+                    <div id="left_score_pit_pebble_count" class="pebble_count_text centered_text">0</div>
+                </div>
+            </div>
+            <div id="game_pits">
+                <div id="upper_pits" class="pit_group">
+                    <div id="upper_pit_0" class="pit left_player">
+                        <div id="upper_pit_0_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="upper_pit_0_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                    <div id="upper_pit_1" class="pit left_player">
+                        <div id="upper_pit_1_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="upper_pit_1_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                    <div id="upper_pit_2" class="pit left_player">
+                        <div id="upper_pit_2_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="upper_pit_2_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                    <div id="upper_pit_3" class="pit left_player">
+                        <div id="upper_pit_3_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="upper_pit_3_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                    <div id="upper_pit_4" class="pit left_player">
+                        <div id="upper_pit_4_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="upper_pit_4_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                    <div id="upper_pit_5" class="pit left_player">
+                        <div id="upper_pit_5_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="upper_pit_5_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="lower_pits" class="pit_group">
+                    <div id="lower_pit_0" class="pit right_player">
+                        <div id="lower_pit_0_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="lower_pit_0_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                    <div id="lower_pit_1" class="pit right_player">
+                        <div id="lower_pit_1_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="lower_pit_1_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                    <div id="lower_pit_2" class="pit right_player">
+                        <div id="lower_pit_2_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="lower_pit_2_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                    <div id="lower_pit_3" class="pit right_player">
+                        <div id="lower_pit_3_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="lower_pit_3_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                    <div id="lower_pit_4" class="pit right_player">
+                        <div id="lower_pit_4_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="lower_pit_4_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                    <div id="lower_pit_5" class="pit right_player">
+                        <div id="lower_pit_5_pebble_space" class="pebble_space"></div>
+                        <div class="pebble_count_container">
+                            <div id="lower_pit_5_pebble_count" class="pebble_count_text centered_text">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right_score_pit" class="score_pit right_player">
+                <div id="right_score_pit_pebble_space" class="pebble_space"></div>
+                <div class="pebble_count_container">
+                    <div id="right_score_pit_pebble_count" class="pebble_count_text centered_text">0</div>
+                </div>
+            </div>
+        </div>
+        <div id="game_results"></div>
+        <script type="text/javascript" src="control.js"></script>
+    </body>
+</html>
